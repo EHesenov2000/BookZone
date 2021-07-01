@@ -1,0 +1,1748 @@
+{
+	"info": {
+		"_postman_id": "6d6b3f79-aa98-4519-950e-6cad6c8587a7",
+		"name": "BookZone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sliders",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/sliders/getall",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"sliders",
+										"getall"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "pexels-photo-531880.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/sliders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"sliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/sliders?page=1&&count=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"sliders"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "count",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/sliders/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"sliders",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/sliders/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"sliders",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "pexels-photo-531880.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/sliders/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"sliders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/tags/getall",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"tags",
+										"getall"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"tag7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/tags",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/tags?page=1&&count=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "count",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/tags/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"tags",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"tag8\",\r\n    \"isdeleted\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/tags/7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"tags",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/tags/12",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"tags",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authors",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/authors/getall",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"authors",
+										"getall"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Author1\",\r\n    \"bornYear\":2001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/authors",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/authors?page=1&count=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"authors"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "count",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/authors/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Author1\",\r\n    \"bornYear\":2001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/authors/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"authors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/authors/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"authors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "GetAllByValues",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/books?genreId=2&categoryId=4&tagId=5",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"books"
+									],
+									"query": [
+										{
+											"key": "genreId",
+											"value": "2"
+										},
+										{
+											"key": "categoryId",
+											"value": "4"
+										},
+										{
+											"key": "tagId",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddComment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbmhDb2RlMjAwMSIsInN1YiI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImp0aSI6ImU5NWQzZTRkLWQ0NWQtNDgxMC1iMWMzLWExMmI0ZmJkZTM0NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyNTE3NjYwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.-x3XfRHfsIMFU1O0GvHMho2E8lD2WLsEa0ZBmYwvD3s",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"text\":\"salam gozel kitabdir\",\r\n    \"bookId\":7\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44328/api/books",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetComments",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbmhDb2RlMjAwMSIsInN1YiI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImp0aSI6ImU5NWQzZTRkLWQ0NWQtNDgxMC1iMWMzLWExMmI0ZmJkZTM0NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyNTE3NjYwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.-x3XfRHfsIMFU1O0GvHMho2E8lD2WLsEa0ZBmYwvD3s",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/books/getcomment?id=7&page=1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"books",
+										"getcomment"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "7"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "am.jpg"
+								},
+								{
+									"key": "desc",
+									"value": "Description1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "book1",
+									"type": "text"
+								},
+								{
+									"key": "salePrice",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "producingPrice",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "authorId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "genreId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "tagIds",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/books/9",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"books",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/books/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"books",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "pexels-photo-531880.jpeg"
+								},
+								{
+									"key": "desc",
+									"value": "firstdescription1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "firstname1",
+									"type": "text"
+								},
+								{
+									"key": "salePrice",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "producingPrice",
+									"value": "140",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "authorId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "genreId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "tagIds",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/books/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"books",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/categories/getall",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"categories",
+										"getall"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"category4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/categories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/categories?page=1&count=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "count",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/categories/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"categories",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"category2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/categories/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"categories",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/categories/7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"categories",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setting",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/settings/get",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"settings",
+										"get"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "pexels-photo-531880.jpeg"
+								},
+								{
+									"key": "location",
+									"value": "location",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "contact",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "facebook",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "instagram",
+									"type": "text"
+								},
+								{
+									"key": "pinterest",
+									"value": "pinterest",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/settings",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/settings/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"settings",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/settings/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"settings",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "me.jpg"
+								},
+								{
+									"key": "location",
+									"value": "location1",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "contact1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email1",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "facebook1",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "instagram1",
+									"type": "text"
+								},
+								{
+									"key": "pinterest",
+									"value": "pinterest1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/settings/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"settings",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genres",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "GetAllByCategoryId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/genres/getall/4",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"genres",
+										"getall",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"genre6\",\r\n    \"categoryId\":6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/genres",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/genres/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"genres",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/genres",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"geNre1\",\r\n    \"categoryId\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/genres/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"genres",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/genres/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"genres",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImM3N2Q3MDAzLTNhZDAtNGFlZi1hMTI0LTFjMjY1ZGM5NjA4OCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbmhDb2RlMjAwMSIsInN1YiI6ImM3N2Q3MDAzLTNhZDAtNGFlZi1hMTI0LTFjMjY1ZGM5NjA4OCIsImp0aSI6ImM1MGVmODcxLTRjZjgtNDIwZS1hOWU4LWQyODA3OTA3MzFlYiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyNTEzMzAzNywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.pL-3Vm7rdpUNtsvN3oCa0hLY7ZHVSCtZJMFeMsSfm-o",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/accounts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImM3N2Q3MDAzLTNhZDAtNGFlZi1hMTI0LTFjMjY1ZGM5NjA4OCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbmhDb2RlMjAwMSIsInN1YiI6ImM3N2Q3MDAzLTNhZDAtNGFlZi1hMTI0LTFjMjY1ZGM5NjA4OCIsImp0aSI6ImM1MGVmODcxLTRjZjgtNDIwZS1hOWU4LWQyODA3OTA3MzFlYiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyNTEzMzAzNywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.pL-3Vm7rdpUNtsvN3oCa0hLY7ZHVSCtZJMFeMsSfm-o",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\":\"elmanhCode2001\",\r\n    \"password\":\"elman123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44328/api/accounts/login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"accounts",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImM3N2Q3MDAzLTNhZDAtNGFlZi1hMTI0LTFjMjY1ZGM5NjA4OCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJva3RheUNvZGUiLCJzdWIiOiJjNzdkNzAwMy0zYWQwLTRhZWYtYTEyNC0xYzI2NWRjOTYwODgiLCJqdGkiOiI5NWNiOWY4NS0yMDIyLTQ5Y2MtYTAzNi0xNDBmYTI5NjNlODEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNZW1iZXIiLCJleHAiOjE2MjUxMzQyMDQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzI4LyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzI4LyJ9.rke4FXm7WnhopTndYV39A_zOIM_SqjuSeOER57dGIR8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\":\"elmanCodeHasanov\",\r\n    \"fullName\":\"Elman\",\r\n    \"currentPassword\":\"elman123\",\r\n    \"newPassword\":\"elmanhcode123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44328/api/accounts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImM3N2Q3MDAzLTNhZDAtNGFlZi1hMTI0LTFjMjY1ZGM5NjA4OCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbkNvZGVIYXNhbm92Iiwic3ViIjoiYzc3ZDcwMDMtM2FkMC00YWVmLWExMjQtMWMyNjVkYzk2MDg4IiwianRpIjoiZDNhMzczYjItNzI4Yy00MTBhLWEwMzMtODc5Nzk0YzYzZGZiIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVtYmVyIiwiZXhwIjoxNjI1MTM0ODc3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDMyOC8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDMyOC8ifQ.OScOLGdLUNfsX107kQWaftMHJBJPJdnY7rCPb2dQTfs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44328/api/accounts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\":\"elmanhCode2001\",\r\n    \"fullName\":\"Elman Hasanov\",\r\n    \"password\":\"elman123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44328/api/accounts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44328",
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImE3MzcwYjIxLTI1MTUtNGVlNC1iNmZjLWEyNmZlZGRhMDJlNyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiYTczNzBiMjEtMjUxNS00ZWU0LWI2ZmMtYTI2ZmVkZGEwMmU3IiwianRpIjoiN2VmNTExOTktNjQzZi00OWRkLTk2MDItOWRkYjIzYjg3ZDhhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU3VwZXJBZG1pbiIsImV4cCI6MTYyNTA5MzI5OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.pCi6BeNRi_wdtFYKeAes1-PKz4CE_1Ydb_LtiiowCFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"SuperAdmin\",\r\n    \"password\":\"admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/accounts/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"accounts",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImE3MzcwYjIxLTI1MTUtNGVlNC1iNmZjLWEyNmZlZGRhMDJlNyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiYTczNzBiMjEtMjUxNS00ZWU0LWI2ZmMtYTI2ZmVkZGEwMmU3IiwianRpIjoiYWMzZGM1YjctZjA3OC00YWJhLWE3NjktMzMxZmNlOGRmZWQyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU3VwZXJBZG1pbiIsImV4cCI6MTYyNTA5MzQyNCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.rT4VVav0CzY0FiWzgAtOIAUPwrdxTUlrzTup3f1bOa0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/manage/accounts/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"accounts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImE3MzcwYjIxLTI1MTUtNGVlNC1iNmZjLWEyNmZlZGRhMDJlNyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiYTczNzBiMjEtMjUxNS00ZWU0LWI2ZmMtYTI2ZmVkZGEwMmU3IiwianRpIjoiYWMzZGM1YjctZjA3OC00YWJhLWE3NjktMzMxZmNlOGRmZWQyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU3VwZXJBZG1pbiIsImV4cCI6MTYyNTA5MzQyNCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.rT4VVav0CzY0FiWzgAtOIAUPwrdxTUlrzTup3f1bOa0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"SuperAdmin\",\r\n    \"fullName\": \"Admin Elman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/manage/accounts/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"manage",
+								"accounts",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbmhDb2RlMjAwMSIsInN1YiI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImp0aSI6ImU5NWQzZTRkLWQ0NWQtNDgxMC1iMWMzLWExMmI0ZmJkZTM0NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyNTE3NjYwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.-x3XfRHfsIMFU1O0GvHMho2E8lD2WLsEa0ZBmYwvD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"ela kitabdir\",\r\n    \"bookId\":7\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbG1hbmhDb2RlMjAwMSIsInN1YiI6IjlhYTk0MjlkLTRlNDYtNDdlOC04Mjk2LTdlOTc1Y2I3NjUwMyIsImp0aSI6ImU5NWQzZTRkLWQ0NWQtNDgxMC1iMWMzLWExMmI0ZmJkZTM0NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyNTE3NjYwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjgvIn0.-x3XfRHfsIMFU1O0GvHMho2E8lD2WLsEa0ZBmYwvD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/books/getcomment?id=7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"books",
+								"getcomment"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

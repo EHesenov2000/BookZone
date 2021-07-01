@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20210627221123_AppUsersTableCreatedWithIdentity.cs" />
+    <Compile Remove="Data\Migrations\20210627221123_AppUsersTableCreatedWithIdentity.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210627221726_AppUsersTableCreatedWithIdentity.cs" />
+    <Compile Remove="Data\Migrations\20210627221726_AppUsersTableCreatedWithIdentity.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210628204620_CommentTableCreated.cs" />
+    <Compile Remove="Data\Migrations\20210628204620_CommentTableCreated.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\book\" />
+    <Folder Include="wwwroot\uploads\setting\" />
+    <Folder Include="wwwroot\uploads\slider\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+
+</Project>
